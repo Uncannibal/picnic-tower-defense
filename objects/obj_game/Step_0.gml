@@ -8,12 +8,6 @@
 //spawn_enemy("Instances", spawn_bee, obj_bee, 100, 1);
 
 
-if ((time_source_exists(spawn_ant) || time_source_exists(spawn_spider) || time_source_exists(spawn_beetle)
-|| time_source_exists(spawn_wasp) || time_source_exists(spawn_snail) || time_source_exists(spawn_bee)) == 
-false){
-	is_wave_over = true;
-}
-
 if (valid_start(1) == true){
 		spawn_enemy("Instances", spawn_ant, obj_ant, 10, 1);
 		just_started_wave = false;
