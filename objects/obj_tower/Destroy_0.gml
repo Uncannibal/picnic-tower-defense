@@ -1,0 +1,3 @@
+time_source_destroy(shoot_timer);
+time_source_destroy(attack_sprite_timer);
+time_source_destroy(health_check_timer);

@@ -1,0 +1,1 @@
+sprite_check(hover_sprite);
