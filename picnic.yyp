@@ -127,6 +127,7 @@
     {"id":{"name":"spr_soda_splash","path":"sprites/spr_soda_splash/spr_soda_splash.yy",},},
     {"id":{"name":"spr_soda","path":"sprites/spr_soda/spr_soda.yy",},},
     {"id":{"name":"spr_spider","path":"sprites/spr_spider/spr_spider.yy",},},
+    {"id":{"name":"spr_sugar","path":"sprites/spr_sugar/spr_sugar.yy",},},
     {"id":{"name":"spr_wasp","path":"sprites/spr_wasp/spr_wasp.yy",},},
   ],
   "resourceType":"GMProject",

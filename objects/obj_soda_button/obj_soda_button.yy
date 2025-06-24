@@ -11,9 +11,9 @@
   "managed":true,
   "name":"obj_soda_button",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tower_button","path":"objects/obj_tower_button/obj_tower_button.yy",},"propertyId":{"name":"button_sprite","path":"objects/obj_tower_button/obj_tower_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_soda_button",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tower_button","path":"objects/obj_tower_button/obj_tower_button.yy",},"propertyId":{"name":"hover_sprite","path":"objects/obj_tower_button/obj_tower_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_soda_button_click",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tower_button","path":"objects/obj_tower_button/obj_tower_button.yy",},"propertyId":{"name":"tower","path":"objects/obj_tower_button/obj_tower_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_soda",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tower_button","path":"objects/obj_tower_button/obj_tower_button.yy",},"propertyId":{"name":"button_sprite","path":"objects/obj_tower_button/obj_tower_button.yy",},"resource":{"name":"spr_soda_button","path":"sprites/spr_soda_button/spr_soda_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_soda_button",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tower_button","path":"objects/obj_tower_button/obj_tower_button.yy",},"propertyId":{"name":"hover_sprite","path":"objects/obj_tower_button/obj_tower_button.yy",},"resource":{"name":"spr_soda_button_click","path":"sprites/spr_soda_button_click/spr_soda_button_click.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_soda_button_click",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tower_button","path":"objects/obj_tower_button/obj_tower_button.yy",},"propertyId":{"name":"tower","path":"objects/obj_tower_button/obj_tower_button.yy",},"resource":{"name":"obj_soda","path":"objects/obj_soda/obj_soda.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_soda",},
   ],
   "parent":{
     "name":"tower buttons",

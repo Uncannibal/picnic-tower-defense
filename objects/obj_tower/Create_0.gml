@@ -1,3 +1,6 @@
+image_xscale = 0.75;
+image_yscale = 0.75;
+
 released = false;
 is_dragging = false;
 
@@ -38,7 +41,7 @@ function start_shoot_timer(period, bullet, sprite, shoot_sprite, range){
 function check_valid_spot(){
 	if (place_meeting(x, y, obj_tower) == true || place_meeting(x, y, obj_basket) == true
 	|| place_meeting(x, y, obj_tower_button) == true || place_meeting(x, y, obj_button) == true
-	|| ( 80 < x && x < 1850 && 60 < y && y < 1015) == false){
+	|| ( 200 < x && x < 1700 && 160 < y && y < 900) == false){
 		return false;
 	}else{
 		return true;
