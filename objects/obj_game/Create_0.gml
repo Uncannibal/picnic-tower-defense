@@ -26,9 +26,9 @@ function spawn_logic(){
     side = random(2);   // Randomly choose which side enemies spawn from
     if (side >= 1){
         spawn_x = choose(-100, room_width + 100);  // Spawn off left or right of the room
-        spawn_y = random(room_height);             // Anywhere vertically within the room
+        spawn_y = floor(random(room_height));             // Anywhere vertically within the room
     } else {
-        spawn_x = random(room_width);              // Anywhere horizontally within the room
+        spawn_x = floor(random(room_width));              // Anywhere horizontally within the room
         spawn_y = choose(-100, room_height + 100); // Spawn off top or bottom of the room
     }
     return [spawn_x, spawn_y];

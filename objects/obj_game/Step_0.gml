@@ -57,7 +57,7 @@ else if (valid_start(9)){
 	just_started_wave = false;
 	obj_sandwich_button.unlock_button(spr_sandwich_button);
 }
-else if (valid_start(9)){
+else if (valid_start(10)){
 	spawn_enemy("Instances", spawn_beetle, obj_beetle, 40, 0.50);
 	spawn_enemy("Instances", spawn_wasp, obj_wasp, 20, 1);
 	just_started_wave = false;

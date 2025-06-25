@@ -14,7 +14,10 @@
     "name":"buttons",
     "path":"folders/Objects/buttons.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_game_UI",
+    "path":"objects/obj_game_UI/obj_game_UI.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_sandwich_button_lock",
-    "path":"sprites/spr_sandwich_button_lock/spr_sandwich_button_lock.yy",
+    "name":"spr_soda_button_lock",
+    "path":"sprites/spr_soda_button_lock/spr_soda_button_lock.yy",
   },
   "spriteMaskId":null,
   "visible":true,
