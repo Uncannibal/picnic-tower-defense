@@ -56,14 +56,15 @@ function wave_over(){
 	}
 	
     // Check if all spawn timers are finished (no reps remaining)
-    timers_done = (
-        (time_source_get_reps_remaining(spawn_ant) <= 0 || time_source_get_reps_remaining(spawn_ant) == undefined) &&
-        (time_source_get_reps_remaining(spawn_ant) <= 0 || time_source_get_reps_remaining(spawn_ant) == undefined) &&
-        (time_source_get_reps_remaining(spawn_ant) <= 0 || time_source_get_reps_remaining(spawn_ant) == undefined) &&
-        (time_source_get_reps_remaining(spawn_ant) <= 0 || time_source_get_reps_remaining(spawn_ant) == undefined) &&
-        (time_source_get_reps_remaining(spawn_ant) <= 0 || time_source_get_reps_remaining(spawn_ant) == undefined) &&
-        (time_source_get_reps_remaining(spawn_ant) <= 0 || time_source_get_reps_remaining(spawn_ant) == undefined)
-    );
+   timers_done = (
+    (time_source_get_reps_remaining(spawn_ant) <= 0 || time_source_get_reps_remaining(spawn_ant) == undefined) &&
+    (time_source_get_reps_remaining(spawn_spider) <= 0 || time_source_get_reps_remaining(spawn_spider) == undefined) &&
+    (time_source_get_reps_remaining(spawn_beetle) <= 0 || time_source_get_reps_remaining(spawn_beetle) == undefined) &&
+    (time_source_get_reps_remaining(spawn_wasp) <= 0 || time_source_get_reps_remaining(spawn_wasp) == undefined) &&
+    (time_source_get_reps_remaining(spawn_snail) <= 0 || time_source_get_reps_remaining(spawn_snail) == undefined) &&
+    (time_source_get_reps_remaining(spawn_bee) <= 0 || time_source_get_reps_remaining(spawn_bee) == undefined)
+);
+
 
     // Check if all enemies are cleared from the room
     enemies_cleared = (instance_number(obj_enemy) == 0);
