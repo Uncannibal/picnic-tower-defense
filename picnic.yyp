@@ -52,6 +52,8 @@
   },
   "name":"picnic",
   "resources":[
+    {"id":{"name":"font_psilly_12","path":"fonts/font_psilly_12/font_psilly_12.yy",},},
+    {"id":{"name":"font_psilly_48","path":"fonts/font_psilly_48/font_psilly_48.yy",},},
     {"id":{"name":"obj_air_enemy","path":"objects/obj_air_enemy/obj_air_enemy.yy",},},
     {"id":{"name":"obj_air_tower","path":"objects/obj_air_tower/obj_air_tower.yy",},},
     {"id":{"name":"obj_ant","path":"objects/obj_ant/obj_ant.yy",},},
