@@ -31,7 +31,7 @@ else if (valid_start(5)){
 	spawn_enemy("Instances", spawn_ant, obj_ant, 25, 0.50);
 	spawn_enemy("Instances", spawn_spider, obj_spider, 15, 0.75);
 	just_started_wave = false;
-	obj_chip_button.unlock_button(spr_chip_button);
+	obj_chip_button.unlock_button(spr_sandwich_button);
 }
 else if (valid_start(6)){
 	spawn_enemy("Instances", spawn_ant, obj_ant, 30, 0.50);
@@ -55,7 +55,7 @@ else if (valid_start(9)){
 	spawn_enemy("Instances", spawn_spider, obj_spider, 40, 0.75);
 	spawn_enemy("Instances", spawn_beetle, obj_beetle, 30, 1);
 	just_started_wave = false;
-	obj_sandwich_button.unlock_button(spr_sandwich_button);
+	obj_sandwich_button.unlock_button(spr_chip_button);
 }
 else if (valid_start(10)){
 	spawn_enemy("Instances", spawn_beetle, obj_beetle, 40, 0.50);

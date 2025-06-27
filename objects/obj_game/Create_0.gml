@@ -51,38 +51,41 @@ function spawn_enemy(layer, timer, object, number, period){
 
 // Function that returns true if all conditions for a wave being over are met
 function wave_over(){
-	if (game_started == false){
-		return true;
-	}
-	
-    // Check if all spawn timers are finished (no reps remaining)
-   timers_done = (
-    (time_source_get_reps_remaining(spawn_ant) <= 0 || time_source_get_reps_remaining(spawn_ant) == undefined) &&
-    (time_source_get_reps_remaining(spawn_spider) <= 0 || time_source_get_reps_remaining(spawn_spider) == undefined) &&
-    (time_source_get_reps_remaining(spawn_beetle) <= 0 || time_source_get_reps_remaining(spawn_beetle) == undefined) &&
-    (time_source_get_reps_remaining(spawn_wasp) <= 0 || time_source_get_reps_remaining(spawn_wasp) == undefined) &&
-    (time_source_get_reps_remaining(spawn_snail) <= 0 || time_source_get_reps_remaining(spawn_snail) == undefined) &&
-    (time_source_get_reps_remaining(spawn_bee) <= 0 || time_source_get_reps_remaining(spawn_bee) == undefined)
-);
+    if (game_started == false){
+        return true;
+    }
 
+    // Helper function to safely check a timer
+    function timer_done(timer){
+        reps = time_source_get_reps_remaining(timer);
+        return (reps <= 1 || reps == undefined);
+    }
 
-    // Check if all enemies are cleared from the room
+    timers_done = (
+        timer_done(spawn_ant) &&
+        timer_done(spawn_spider) &&
+        timer_done(spawn_beetle) &&
+        timer_done(spawn_wasp) &&
+        timer_done(spawn_snail) &&
+        timer_done(spawn_bee)
+    );
+
     enemies_cleared = (instance_number(obj_enemy) == 0);
 
-    // Return true if both conditions are met
-	return (timers_done && enemies_cleared);
-
+    return (timers_done && enemies_cleared);
 }
 
 
+
 function draw_debug() {
-    bg_width = 200;
-    bg_height = 70;
+    bg_width = 300;
+    bg_height = 220;
 
     // Calculate top-left coordinates for right-middle alignment
     debug_x = display_get_width() - bg_width - 10; // 10 px padding from right edge
     debug_y = (display_get_height() / 2) - (bg_height / 2);
-
+	
+	draw_set_font(font_psilly_12)     
     draw_set_color(c_black);
     draw_rectangle(debug_x, debug_y, debug_x + bg_width, debug_y + bg_height, false);
 
@@ -90,6 +93,14 @@ function draw_debug() {
     draw_text(debug_x + 10, debug_y + 10, "is_wave_over: " + string(is_wave_over));
     draw_text(debug_x + 10, debug_y + 30, "just_started_wave: " + string(just_started_wave));
     draw_text(debug_x + 10, debug_y + 50, "wave_number: " + string(wave_number));
+
+    draw_text(debug_x + 10, debug_y + 80, "spawn_ant reps: " + string(time_source_get_reps_remaining(spawn_ant)));
+    draw_text(debug_x + 10, debug_y + 100, "spawn_spider reps: " + string(time_source_get_reps_remaining(spawn_spider)));
+    draw_text(debug_x + 10, debug_y + 120, "spawn_beetle reps: " + string(time_source_get_reps_remaining(spawn_beetle)));
+    draw_text(debug_x + 10, debug_y + 140, "spawn_wasp reps: " + string(time_source_get_reps_remaining(spawn_wasp)));
+    draw_text(debug_x + 10, debug_y + 160, "spawn_snail reps: " + string(time_source_get_reps_remaining(spawn_snail)));
+    draw_text(debug_x + 10, debug_y + 180, "spawn_bee reps: " + string(time_source_get_reps_remaining(spawn_bee)));
 }
+
 
 
