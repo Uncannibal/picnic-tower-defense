@@ -8,5 +8,10 @@ var valid_click = (
 )
 
 if(valid_click == true){
-	instance_create_layer(x, y, "Instances", tower);
+	cur_tower = instance_create_layer(x, y, "Instances", tower);
+	if(cur_tower.price > obj_UI_logic.sugar_value){
+		instance_destroy(cur_tower);
+	} else {
+		obj_UI_logic.sugar_value -= cur_tower.price
+	}
 }

@@ -13,6 +13,7 @@
   "name":"obj_sandwich",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tower","path":"objects/obj_tower/obj_tower.yy",},"propertyId":{"name":"tower_health","path":"objects/obj_tower/obj_tower.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tower","path":"objects/obj_tower/obj_tower.yy",},"propertyId":{"name":"price","path":"objects/obj_tower/obj_tower.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"200",},
   ],
   "parent":{
     "name":"towers",

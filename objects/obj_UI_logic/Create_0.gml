@@ -1,4 +1,4 @@
-sugar_value = 0;
+sugar_value = 300;
 depth = -10000
 
 function draw_sugar() {

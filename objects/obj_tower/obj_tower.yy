@@ -38,6 +38,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"tower_health","filters":[],"listItems":[],"multiselect":false,"name":"tower_health","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"is_ground_tower","filters":[],"listItems":[],"multiselect":false,"name":"is_ground_tower","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"price","filters":[],"listItems":[],"multiselect":false,"name":"price","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
