@@ -1,7 +1,10 @@
 obj_game.wave_number = 0;
+inf_mode = false;
+inf_wave_number = 0;
 is_wave_over = true;
 just_started_wave = false;
 game_started = false;
+
 
 
 // Create timers for different enemy types, initially configured with empty functions
