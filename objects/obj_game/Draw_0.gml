@@ -1,1 +1,1 @@
-draw_debug();
+//draw_debug();
