@@ -6,12 +6,18 @@
   ],
   "managed":true,
   "name":"obj_trashcan",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"propertyId":{"name":"sprite_idle","path":"objects/obj_button/obj_button.yy",},"resource":{"name":"spr_trashcan","path":"sprites/spr_trashcan/spr_trashcan.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_trashcan",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"propertyId":{"name":"sprite_click","path":"objects/obj_button/obj_button.yy",},"resource":{"name":"spr_trashcan","path":"sprites/spr_trashcan/spr_trashcan.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_trashcan",},
+  ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"buttons",
+    "path":"folders/Objects/buttons.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_game_button",
+    "path":"objects/obj_game_button/obj_game_button.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
