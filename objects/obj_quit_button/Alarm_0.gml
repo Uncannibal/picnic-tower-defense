@@ -1,0 +1,7 @@
+instance_deactivate_object(obj_settings_box);
+instance_deactivate_object(obj_play_button);
+instance_deactivate_object(obj_quit_button);
+
+instance_activate_object(obj_quit_to_title);
+instance_activate_object(obj_back_button);
+instance_activate_object(obj_quit_box);
