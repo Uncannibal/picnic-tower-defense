@@ -6,7 +6,7 @@
 //spawn_enemy("Instances", spawn_wasp, obj_wasp, 100, 1);
 //spawn_enemy("Instances", spawn_snail, obj_snail, 100, 1);
 //spawn_enemy("Instances", spawn_bee, obj_bee, 100, 1);
-if (inf_mode == false){
+if (inf_mode == false && has_game_ended == false){
 	if (valid_start(1)){
 		game_started = true;
 		spawn_enemy("Instances", spawn_ant, obj_ant, 10, 1);
@@ -169,5 +169,12 @@ if (inf_mode == false){
 		just_started_wave = false;
 }
 
-	is_wave_over = wave_over();
+is_wave_over = wave_over();
+	
+if (!obj_pause_button.is_paused && !instance_exists(obj_basket) && !has_game_ended){
+	is_game_over = true;
+	has_game_ended = true;
+	destroy_timers();
+	alarm[0] = 100;
+}
 

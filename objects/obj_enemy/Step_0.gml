@@ -1,7 +1,7 @@
 if (enemy_health <= 0){
-		instance_destroy();
-		instance_create_layer(x, y, "Instances", obj_sugar);
-	}
+	instance_destroy();
+	instance_create_layer(x, y, "Instances", obj_sugar);
+}
 	
 if (place_meeting(x, y, obj_tower) && obj_tower.released == true && is_hunting == true
 && in_air == false){

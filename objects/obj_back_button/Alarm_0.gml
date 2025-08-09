@@ -1,0 +1,5 @@
+instance_activate_object(obj_settings_box);
+instance_activate_object(obj_play_button);
+instance_activate_object(obj_quit_button);
+
+obj_pause_button.deactivate_warning();

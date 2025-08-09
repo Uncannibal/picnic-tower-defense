@@ -40,6 +40,15 @@ function pause_logic(){
 		instance_deactivate_object(obj_quit_button);
 }   
 }
+
+function deactivate_warning(){
+	instance_deactivate_object(obj_quit_box);
+	instance_deactivate_object(obj_back_button);
+	instance_deactivate_object(obj_quit_to_title);
+}
+
 is_paused = false;
 
+deactivate_warning();
 pause_logic();
+
