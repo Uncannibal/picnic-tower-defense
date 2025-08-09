@@ -10,4 +10,3 @@ var scale_spd = 0.1;
 //animate button
 image_xscale = lerp(image_xscale, goal_scale, scale_spd);
 image_yscale = lerp(image_yscale, goal_scale, scale_spd);
-depth = -10000;

@@ -4,7 +4,8 @@ inf_wave_number = 0;
 is_wave_over = true;
 just_started_wave = false;
 game_started = false;
-
+is_game_over = false;
+has_game_ended = false;
 
 
 // Create timers for different enemy types, initially configured with empty functions
@@ -49,7 +50,7 @@ function spawn_enemy(layer, timer, object, number, period){
         instance_create_layer(spawn_x, spawn_y, layer, obj); 
 		}, [layer, object], number);                             
 	
-    time_source_start(timer);                                
+    time_source_start(timer);  
 }
 
 // Function that returns true if all conditions for a wave being over are met
@@ -78,7 +79,14 @@ function wave_over(){
     return (timers_done && enemies_cleared);
 }
 
-
+function destroy_timers(){
+	time_source_destroy(spawn_ant);
+	time_source_destroy(spawn_spider);
+	time_source_destroy(spawn_beetle);
+	time_source_destroy(spawn_wasp);
+	time_source_destroy(spawn_snail);
+	time_source_destroy(spawn_bee);
+}
 
 function draw_debug() {
     bg_width = 300;
